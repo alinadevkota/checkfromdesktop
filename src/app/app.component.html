@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<img src="E:\new-app\sentimentanalysis\res\images\logo.png" alt="LOGO">
+<div style="text-align:center">
+  <h1>
+    <!-- Welcome to {{ title }}! -->
+  </h1>
+  
+  
+  <mat-button-toggle mat-button [matMenuTriggerFor]="menu"  style="float: right;margin-right: 150px;">Menu</mat-button-toggle>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Home</button>
+    <button mat-menu-item>Categories</button>
+    <button mat-menu-item>Supports</button>
+    <button mat-menu-item>Partners</button>
+    <!-- <button mat-menu-item>Sign In</button> -->
+    <a [routerLink]="['/signup']">
+    <button mat-menu-item >Sign UP</button>
+  </a>
+  </mat-menu>
+
+  
+    
+  <router-outlet></router-outlet>
+</div>
+
